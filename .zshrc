@@ -99,3 +99,5 @@ export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
 gpgconf --launch gpg-agent
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+eval $(thefuck --alias)
