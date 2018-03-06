@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# GOPATH
+export GOPATH=/Users/driordan/go
+export PATH=$GOPATH/bin:$PATH
 
 # SSH Agent -> GPG Agent
 export GPG_TTY="$(tty)"
@@ -101,3 +104,9 @@ gpgconf --launch gpg-agent
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 eval $(thefuck --alias)
+
+# added by Anaconda3 5.1.0 installer
+export PATH="/anaconda3/bin:$PATH"
+
+# Python things for Pipsi
+export PATH=/Users/driordan/.local/bin:$PATH
