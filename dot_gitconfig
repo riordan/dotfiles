@@ -1,0 +1,5 @@
+[user]
+	email = dr@daveriordan.com
+	name = David Riordan
+[init]
+	defaultBranch = main
