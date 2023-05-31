@@ -1,5 +1,5 @@
+## Local bin path
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.pyenv/bin:$PATH
 
 # cross-system defaults for editors: helix > vim > nano > DEFAULT
 set_default_editor() {
@@ -20,6 +20,7 @@ set_default_editor() {
 set_default_editor
 
 # Use PyEnv if installed
+export PATH=$HOME/.pyenv/bin:$PATH
 set_pyenv() {
   if command -v pyenv &> /dev/null
   then
@@ -30,6 +31,9 @@ set_pyenv() {
   fi
 }
 set_pyenv
+
+# PipX Completions
+eval "$(register-python-argcomplete pipx)"
 
 
 eval "$(zoxide init bash)"
