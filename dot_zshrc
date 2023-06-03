@@ -32,10 +32,6 @@ set_pyenv() {
 }
 set_pyenv
 
-# ZSH Completions
-  autoload -U bashcompinit
-  bashcompinit
-
 # Register Pipx Autocomplete
   eval "$(register-python-argcomplete pipx)"
 
@@ -43,3 +39,11 @@ set_pyenv
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 source ~/.atuin_zsh
+
+#hcloud
+fpath+=(~/.config/hcloud/completion/zsh)
+
+# ZSH Completions
+autoload -Uz compinit; compinit
+  autoload -U bashcompinit
+  bashcompinit
