@@ -40,8 +40,9 @@ eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 source ~/.atuin_zsh
 
-#hcloud
+# compinit completion paths
 fpath+=(~/.config/hcloud/completion/zsh)
+fpath+=(~/.config/op/completion/zsh)
 
 # ZSH Completions
 autoload -Uz compinit; compinit
