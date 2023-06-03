@@ -48,3 +48,6 @@ fpath+=(~/.config/op/completion/zsh)
 autoload -Uz compinit; compinit
   autoload -U bashcompinit
   bashcompinit
+
+# hetzner terraform shortcut
+alias createkh='tmp_script=$(mktemp) && curl -sSL -o "${tmp_script}" https://raw.githubusercontent.com/kube-hetzner/terraform-hcloud-kube-hetzner/master/scripts/create.sh && chmod +x "${tmp_script}" && "${tmp_script}" && rm "${tmp_script}"'
