@@ -53,3 +53,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export OPENAI_API_KEY={{ range (onepassword "cozvzdy7evrptelieybmavaj2a").fields -}}
+{{   if (eq .label "gpt-engineer") -}}
+{{     .value -}}
+{{   end -}}
+{{ end }}
