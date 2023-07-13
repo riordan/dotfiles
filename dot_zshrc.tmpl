@@ -1,6 +1,10 @@
 ## Local bin path
 export PATH=$HOME/.local/bin:$PATH
 
+#Antigen base
+source ~/.antigen.zsh
+antigen init ~/.antigenrc
+
 # cross-system defaults for editors: helix > vim > nano > DEFAULT
 set_default_editor() {
   if command -v nvim &> /dev/null
