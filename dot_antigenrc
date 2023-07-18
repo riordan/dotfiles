@@ -25,6 +25,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle unixorn/1password-op.plugin.zsh
 antigen bundle ellie/atuin@main
+antigen bundle thuandt/zsh-pipx
 
 
 # Tell Antigen that you're done.
