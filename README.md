@@ -23,3 +23,4 @@ There are expected differences between each machine. These are accounted for wit
   - defaults to "main" branch
 - Starship
 - Oh-My-Tmux
+- doom emacs (may I be judged kindly for this)
