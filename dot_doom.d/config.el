@@ -87,3 +87,4 @@
 
 (menu-bar-mode 1)
 (tool-bar-mode 1)
+(setq org-ai-openai-api-token (getenv "OPENAI_API_KEY"))

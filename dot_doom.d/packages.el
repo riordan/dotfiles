@@ -56,4 +56,5 @@
 (package! org-caldav)
 (package! whisper
   :recipe (:host github :repo "natrys/whisper.el"))
-(package! org-ai)
+(package! org-ai
+  :recipe (:host github :repo "rksm/org-ai"))
