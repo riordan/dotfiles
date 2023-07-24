@@ -52,7 +52,7 @@
 (package! evil-tutor)
 (package! auto-dark)
 (package! writeroom-mode)
-(package! org-roam)
+;;(package! org-roam)
 (package! org-caldav)
 (package! whisper
   :recipe (:host github :repo "natrys/whisper.el"))

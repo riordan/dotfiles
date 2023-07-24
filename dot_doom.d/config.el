@@ -38,9 +38,6 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -87,4 +84,27 @@
 
 (menu-bar-mode 1)
 (tool-bar-mode 1)
+
+;; ORG CONFIG
+;;; If you use `org' and don't want your org files in the default location below,
+;; change `org-directory'. It must be set before org loads!
+(setq org-directory "~/org/")
+;; ORG AGENDA
+(after! org
+  (setq org-agenda-files '("~/org/agenda.org" "~/org/journal.org"))
+  )
+
+;; ORG:: CALENDAR AND TASKS
+(after! org-caldav
+  (setq org-caldav-url "https://caldav.fastmail.com/dav/calendars/user/dr@daveriordan.com"
+        org-caldav-calendar-id "88f4f311-cc6d-4f89-9027-1dfa93798c5c"
+        org-caldav-inbox (expand-file-name "fromcal-home.org" org-directory)
+        org-caldav-files '( "~/org/agenda.org" )
+        org-icalendar-timezone "America/New_York"
+        org-caldav-uuid-extension "T"
+        org-caldav-delete-org-entries 'ask
+        org-caldav-sync-direction 'twoway))
+
+;; ORG:: Frivolity
+;;
 (setq org-ai-openai-api-token (getenv "OPENAI_API_KEY"))
