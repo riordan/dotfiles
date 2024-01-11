@@ -63,3 +63,6 @@ There are expected differences between each machine. These are accounted for wit
 - Starship
 - Oh-My-Tmux
 - doom emacs (may I be judged kindly for this)
+- GPG
+  - for yubikey
+  - [ ] include hook so it can install on Codespaces and have my signing key passed from the local machine where it's a remote.
